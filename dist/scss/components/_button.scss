@@ -1,0 +1,25 @@
+@use '../abstracts/index' as *;
+
+@mixin button {
+  background-color: $clr-btn;
+  font-family: $font-headings;
+  font-size: .8rem;
+  color: $clr-txt-variant;
+  border: none;
+  border-radius: 50px;
+  padding: .7rem 5rem;
+  box-shadow: 1px 2px 12px -3px rgba(0,0,0,0.5);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $clr-btn-active;
+    color: $clr-txt-primary;
+    transition: all .1s ease-in;
+  }
+
+  @include media-md {
+    font-size: 1rem;
+    padding-inline: 3.5rem;
+  }
+
+}
