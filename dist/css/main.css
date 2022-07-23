@@ -133,6 +133,11 @@ body main .mockups {
   flex: 1;
   margin-bottom: 4rem;
 }
+@media screen and (min-width: 768px) {
+  body main .mockups {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 1024px) {
   body main .mockups {
     margin-bottom: 1.5rem;
